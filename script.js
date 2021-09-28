@@ -12,7 +12,7 @@ let domElement = function(selector, height,width, bg, fontSize) {
 domElement.prototype.create = function (){
   let div = document.createElement('div');
   if (this.selector[0] == '.') {
-    this.selector.classList.add('');
+    div.className = "divclass";
     document.body.appendChild(div);
   }
   if (this.selector[0] == '#'){
